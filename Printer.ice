@@ -2,6 +2,6 @@ module Demo
 {
     interface Printer
     {
-        int printString(string s);
+        string printString(string s);
     }
 }

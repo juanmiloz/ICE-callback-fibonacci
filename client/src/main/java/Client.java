@@ -7,10 +7,10 @@ public class Client{
 
         try(com.zeroc.Ice.Communicator communicator = com.zeroc.Ice.Util.initialize(args,"config.client",extraArgs)){
             //com.zeroc.Ice.ObjectPrx base = communicator.stringToProxy("SimplePrinter:default -p 10000");
-            Demo.PrinterPrx twoway = Demo.PrinterPrx.checkedCast(
+            Demo.PrinterPrx twoWay = Demo.PrinterPrx.checkedCast(
                     communicator.propertyToProxy("Printer.Proxy")).ice_twoway().ice_secure(false);
             //Demo.PrinterPrx printer = Demo.PrinterPrx.checkedCast(base);
-            Demo.PrinterPrx printer = twoway.ice_twoway();
+            Demo.PrinterPrx printer = twoWay.ice_twoway();
 
             if(printer == null) {
                 throw new Error("Invalid proxy");
@@ -24,9 +24,10 @@ public class Client{
                     hostname = f("hostname");
                     input = br.readLine();
                     answer = hostname +": "+ input;
-                    int ans = printer.printString(answer);
-                    System.err.println("Respuesta:"+ans);
+                    String ans = printer.printString(answer);
+                    System.out.println("Respuesta:"+ans);
                 }
+
                 br.close();
             }catch(IOException io){
                 System.err.println("Ocurrio un error");

@@ -1,18 +1,16 @@
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 
 
-public class Server
-{
-    public static void main(String[] args)
-    {
+public class Server {
+    public static void main(String[] args) {
         java.util.List<String> extraArgs = new java.util.ArrayList<String>();
 
-        try(com.zeroc.Ice.Communicator communicator = com.zeroc.Ice.Util.initialize(args,"config.server",extraArgs))
-        {
-            if(!extraArgs.isEmpty())
-            {
+        try (com.zeroc.Ice.Communicator communicator = com.zeroc.Ice.Util.initialize(args, "config.server", extraArgs)) {
+            if (!extraArgs.isEmpty()) {
                 System.err.println("too many arguments");
-                for(String v:extraArgs){
+                for (String v : extraArgs) {
                     System.out.println(v);
                 }
             }
@@ -24,9 +22,9 @@ public class Server
         }
     }
 
-    public static void f(String m)
-    {
-        String str = null, output = "";
+    public static void f(String m) {
+        String str = null;
+        StringBuilder output = new StringBuilder();
 
         InputStream s;
         BufferedReader r;
@@ -34,12 +32,11 @@ public class Server
         try {
             Process p = Runtime.getRuntime().exec(m);
 
-            BufferedReader br = new BufferedReader(new InputStreamReader(p.getInputStream())); 
-            while ((str = br.readLine()) != null) 
-            output += str + System.getProperty("line.separator"); 
-            br.close(); 
-        }
-        catch(Exception ex) {
+            BufferedReader br = new BufferedReader(new InputStreamReader(p.getInputStream()));
+            while ((str = br.readLine()) != null)
+                output.append(str).append(System.getProperty("line.separator"));
+            br.close();
+        } catch (Exception ignored) {
         }
     }
 }

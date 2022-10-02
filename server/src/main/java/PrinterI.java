@@ -1,19 +1,31 @@
-import java.util.Arrays;
 
-public class PrinterI implements Demo.Printer
-{
-    public int printString(String s, com.zeroc.Ice.Current current) {
+import java.math.BigInteger;
+import java.util.HashMap;
+
+public class PrinterI implements Demo.Printer {
+    private static HashMap<Integer, BigInteger> fibonacciValues;
+
+    public PrinterI() {
+        fibonacciValues = new HashMap<>();
+    }
+
+    public String printString(String s, com.zeroc.Ice.Current current) {
 
         String [] arr = s.split(":");
 
-        if(arr[1].trim().matches("[0-9]+")){
-            String fibonacci = fibonacci(Integer.parseInt(arr[1].trim()));
-            String[] arrRes = fibonacci.split(",");
-            System.out.println(fibonacci);
-            return Integer.parseInt(arrRes[arrRes.length-1].trim());
-        }else{
+        if (arr[1].trim().matches("\\w*[0-9]+\\w*")) {
+            int num = Integer.parseInt(arr[1].trim());
+            String fibonacci = fibonacci(num);
+            BigInteger fibonacciN = fibonacciHandler(num);
+            StringBuilder response = new StringBuilder();
+            for (int i = 0; i <= num; i++) {
+                response.append(fibonacciHandler(i)).append("\n");
+            }
+            System.out.println(arr[0]+": " + response);
+            return fibonacciN.toString();
+        } else {
             System.out.println(s);
-            return 0;
+            return "The string is not a number";
         }
     }
 
@@ -33,5 +45,34 @@ public class PrinterI implements Demo.Printer
             b = c;
         }
         return fibonacci;
+    }
+
+    private BigInteger fibonacciHandler(int n) {
+        try {
+            fibonacciFun(n);
+        }catch (StackOverflowError e){
+            fibonacciHandler(n-1000);
+            fibonacciHandler(n);
+        }
+        return fibonacciValues.get(n);
+    }
+
+    private BigInteger fibonacciFun(int n) {
+        if (n == 0) {
+            fibonacciValues.put(n, BigInteger.ZERO);
+            return BigInteger.ZERO;
+        }
+        if (n == 1) {
+            fibonacciValues.put(n, BigInteger.ONE);
+            return BigInteger.ONE;
+        }
+
+        if (fibonacciValues.containsKey(n)) {
+            return fibonacciValues.get(n);
+        }
+
+        fibonacciValues.put(n, fibonacciFun(n - 1).add(fibonacciFun(n - 2)));
+
+        return fibonacciValues.get(n);
     }
 }
