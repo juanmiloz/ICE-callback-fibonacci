@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="hgrid" deleteMissingItems="true" remoteFilesAllowedToDisappearOnAutoupload="false">
+    <serverData>
+      <paths name="hgrid1">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/ICE-callback-fibonacci" local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/ICE-callback-fibonacci/client/build/generated-src" local="$PROJECT_DIR$/client/build/generated-src" web="/" />
+            <mapping deploy="/ICE-callback-fibonacci/server/src/main" local="$PROJECT_DIR$/server/src/main" web="/" />
+            <mapping deploy="/ICE-callback-fibonacci/server/build/generated-src" local="$PROJECT_DIR$/server/build/generated-src" web="/" />
+            <mapping deploy="/ICE-callback-fibonacci/client" local="$PROJECT_DIR$/client" web="/" />
+            <mapping deploy="/ICE-callback-fibonacci/client/src/main" local="$PROJECT_DIR$/client/src/main" web="/" />
+            <mapping deploy="/ICE-callback-fibonacci/server" local="$PROJECT_DIR$/server" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="hgrid2">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/ICE-callback-fibonacci" local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/ICE-callback-fibonacci/client/build/generated-src" local="$PROJECT_DIR$/client/build/generated-src" web="/" />
+            <mapping deploy="/ICE-callback-fibonacci/server/src/main" local="$PROJECT_DIR$/server/src/main" web="/" />
+            <mapping deploy="/ICE-callback-fibonacci/server/build/generated-src" local="$PROJECT_DIR$/server/build/generated-src" web="/" />
+            <mapping deploy="/ICE-callback-fibonacci/client" local="$PROJECT_DIR$/client" web="/" />
+            <mapping deploy="/ICE-callback-fibonacci/client/src/main" local="$PROJECT_DIR$/client/src/main" web="/" />
+            <mapping deploy="/ICE-callback-fibonacci/server" local="$PROJECT_DIR$/server" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="hgrid3">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/ICE-callback-fibonacci" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="hgrid4">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/ICE-callback-fibonacci" local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/ICE-callback-fibonacci/client/build/generated-src" local="$PROJECT_DIR$/client/build/generated-src" web="/" />
+            <mapping deploy="/ICE-callback-fibonacci/server/src/main" local="$PROJECT_DIR$/server/src/main" web="/" />
+            <mapping deploy="/ICE-callback-fibonacci/server/build/generated-src" local="$PROJECT_DIR$/server/build/generated-src" web="/" />
+            <mapping deploy="/ICE-callback-fibonacci/client" local="$PROJECT_DIR$/client" web="/" />
+            <mapping deploy="/ICE-callback-fibonacci/client/src/main" local="$PROJECT_DIR$/client/src/main" web="/" />
+            <mapping deploy="/ICE-callback-fibonacci/server" local="$PROJECT_DIR$/server" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="hgrid5">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/ICE-callback-fibonacci" local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/ICE-callback-fibonacci/client/build/generated-src" local="$PROJECT_DIR$/client/build/generated-src" web="/" />
+            <mapping deploy="/ICE-callback-fibonacci/server/src/main" local="$PROJECT_DIR$/server/src/main" web="/" />
+            <mapping deploy="/ICE-callback-fibonacci/server/build/generated-src" local="$PROJECT_DIR$/server/build/generated-src" web="/" />
+            <mapping deploy="/ICE-callback-fibonacci/client" local="$PROJECT_DIR$/client" web="/" />
+            <mapping deploy="/ICE-callback-fibonacci/client/src/main" local="$PROJECT_DIR$/client/src/main" web="/" />
+            <mapping deploy="/ICE-callback-fibonacci/server" local="$PROJECT_DIR$/server" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="hgrid6">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/ICE-callback-fibonacci" local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/ICE-callback-fibonacci/client/build/generated-src" local="$PROJECT_DIR$/client/build/generated-src" web="/" />
+            <mapping deploy="/ICE-callback-fibonacci/server/src/main" local="$PROJECT_DIR$/server/src/main" web="/" />
+            <mapping deploy="/ICE-callback-fibonacci/server/build/generated-src" local="$PROJECT_DIR$/server/build/generated-src" web="/" />
+            <mapping deploy="/ICE-callback-fibonacci/client" local="$PROJECT_DIR$/client" web="/" />
+            <mapping deploy="/ICE-callback-fibonacci/client/src/main" local="$PROJECT_DIR$/client/src/main" web="/" />
+            <mapping deploy="/ICE-callback-fibonacci/server" local="$PROJECT_DIR$/server" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="hgrid7">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/ICE-callback-fibonacci" local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/ICE-callback-fibonacci/client/build/generated-src" local="$PROJECT_DIR$/client/build/generated-src" web="/" />
+            <mapping deploy="/ICE-callback-fibonacci/server/src/main" local="$PROJECT_DIR$/server/src/main" web="/" />
+            <mapping deploy="/ICE-callback-fibonacci/server/build/generated-src" local="$PROJECT_DIR$/server/build/generated-src" web="/" />
+            <mapping deploy="/ICE-callback-fibonacci/client" local="$PROJECT_DIR$/client" web="/" />
+            <mapping deploy="/ICE-callback-fibonacci/client/src/main" local="$PROJECT_DIR$/client/src/main" web="/" />
+            <mapping deploy="/ICE-callback-fibonacci/server" local="$PROJECT_DIR$/server" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="hgrid8">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/ICE-callback-fibonacci" local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/ICE-callback-fibonacci/client/build/generated-src" local="$PROJECT_DIR$/client/build/generated-src" web="/" />
+            <mapping deploy="/ICE-callback-fibonacci/server/src/main" local="$PROJECT_DIR$/server/src/main" web="/" />
+            <mapping deploy="/ICE-callback-fibonacci/server/build/generated-src" local="$PROJECT_DIR$/server/build/generated-src" web="/" />
+            <mapping deploy="/ICE-callback-fibonacci/client" local="$PROJECT_DIR$/client" web="/" />
+            <mapping deploy="/ICE-callback-fibonacci/client/src/main" local="$PROJECT_DIR$/client/src/main" web="/" />
+            <mapping deploy="/ICE-callback-fibonacci/server" local="$PROJECT_DIR$/server" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="hgrid9">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/ICE-callback-fibonacci" local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/ICE-callback-fibonacci/client/build/generated-src" local="$PROJECT_DIR$/client/build/generated-src" web="/" />
+            <mapping deploy="/ICE-callback-fibonacci/server/src/main" local="$PROJECT_DIR$/server/src/main" web="/" />
+            <mapping deploy="/ICE-callback-fibonacci/server/build/generated-src" local="$PROJECT_DIR$/server/build/generated-src" web="/" />
+            <mapping deploy="/ICE-callback-fibonacci/client" local="$PROJECT_DIR$/client" web="/" />
+            <mapping deploy="/ICE-callback-fibonacci/client/src/main" local="$PROJECT_DIR$/client/src/main" web="/" />
+            <mapping deploy="/ICE-callback-fibonacci/server" local="$PROJECT_DIR$/server" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>

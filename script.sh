@@ -1,9 +1,8 @@
 #! C:\cygwin64\bin\bash.exe
 
-list="
-10.147.19.226
-10.147.19.231
-10.147.19.36
+list="10.147.19.226
+10.147.19.231"
+var="10.147.19.36
 10.147.19.215
 10.147.19.121
 10.147.19.245
@@ -33,6 +32,14 @@ list="
 10.147.19.212
 "
 
+nValue="10000"
+
+echo "Running script.sh"
+
+ClientBuildFunction(){
+   ssh swarch@"$1" "./ICE-callback-fibonacci/request.sh $2"
+}
+
 for i in $list; do
-  echo "$i"
+        ClientBuildFunction "$i" nValue
 done
