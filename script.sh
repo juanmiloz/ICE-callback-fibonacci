@@ -31,12 +31,11 @@ var="10.147.19.36
 10.147.19.236
 10.147.19.212
 "
-SSHPASS='swarch'
 
 echo "Running script.sh"
 
 ClientBuildFunction() {
-  sshpass -e ssh swarch@"$1" "./ICE-callback-fibonacci/request.sh $2"
+  SSHPASS='swarch' sshpass -e ssh -o StrictHostKeyChecking=no swarch@"$1" "./ICE-callback-fibonacci/request.sh $2"
 }
 
 for i in $list; do
