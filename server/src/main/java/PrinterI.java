@@ -22,7 +22,7 @@ public class PrinterI implements Talker.Printer {
         fibonacci = new Fibonacci(semaphore);
         registerHosts = new HashMap<>();
         System.out.println("Server started");
-        System.out.println(pool.getPoolSize());
+        System.out.println("Thread number active = " + pool.getActiveCount());
         Runtime.getRuntime().addShutdownHook(new Thread(() -> {
             System.out.println("Shutting down...");
             pool.shutdown();
@@ -30,10 +30,8 @@ public class PrinterI implements Talker.Printer {
     }
 
     public void printString(String s, CallbackPrx cl, Current current) {
-        System.out.println(pool.getActiveCount());
         pool.execute(new Thread(() -> {
             Long startTime = System.currentTimeMillis();
-            System.out.println(startTime + " " + "ms");
             String[] arr = s.split("<-");
 
             System.out.println(arr[0].trim());
@@ -66,10 +64,12 @@ public class PrinterI implements Talker.Printer {
             }
 
             Long endTime = System.currentTimeMillis();
-            System.out.println(endTime + " " + "ms");
+            System.out.println("start time = " +startTime + " " + "ms");
+            System.out.println("end time =" + endTime + " " + "ms");
             System.out.println("Response time: " + (endTime - startTime) + " ms");
             Thread thread = Thread.currentThread();
             System.out.println("Thread " + thread.getId() + " finished");
+            System.out.println("thread number" + pool.getActiveCount());
         }));
     }
 
