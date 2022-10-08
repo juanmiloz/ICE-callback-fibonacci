@@ -31,15 +31,14 @@ var="10.147.19.36
 10.147.19.236
 10.147.19.212
 "
-
-nValue="10000"
+SSHPASS='swarch'
 
 echo "Running script.sh"
 
-ClientBuildFunction(){
-   ssh swarch@"$1" "./ICE-callback-fibonacci/request.sh $2"
+ClientBuildFunction() {
+  sshpass -e ssh swarch@"$1" "./ICE-callback-fibonacci/request.sh $2"
 }
 
 for i in $list; do
-        ClientBuildFunction "$i" nValue
+  ClientBuildFunction "$i" nValue
 done

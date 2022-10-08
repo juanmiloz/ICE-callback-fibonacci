@@ -7,39 +7,47 @@ import java.util.HashMap;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Semaphore;
+import java.util.concurrent.ThreadPoolExecutor;
 
 
 public class PrinterI implements Talker.Printer {
-    private static HashMap<Integer, BigInteger> fibonacciValues;
     private static HashMap<String, CallbackPrx> registerHosts;
-    private final ExecutorService pool;
+    private final ThreadPoolExecutor pool;
+    private final Fibonacci fibonacci;
     private final Semaphore semaphore;
 
     public PrinterI() {
-        pool = Executors.newCachedThreadPool();
+        pool = (ThreadPoolExecutor) Executors.newCachedThreadPool();
         semaphore = new Semaphore(1);
-        fibonacciValues = new HashMap<>();
+        fibonacci = new Fibonacci(semaphore);
         registerHosts = new HashMap<>();
+        System.out.println("Server started");
+        System.out.println(pool.getPoolSize());
+        Runtime.getRuntime().addShutdownHook(new Thread(() -> {
+            System.out.println("Shutting down...");
+            pool.shutdown();
+        }));
     }
 
     public void printString(String s, CallbackPrx cl, Current current) {
+        System.out.println(pool.getActiveCount());
         pool.execute(new Thread(() -> {
-
+            Long startTime = System.currentTimeMillis();
+            System.out.println(startTime + " " + "ms");
             String[] arr = s.split("<-");
-
 
             System.out.println(arr[0].trim());
 
-            if (arr[1].trim().startsWith("register")) {
+            if (arr[1].trim().startsWith("Register")) {
                 String host = arr[1].split(":")[1];
                 registerHost(host, cl, current);
             }
 
-            if (arr[1].trim().startsWith("list clients")) {
+            if (arr[1].trim().startsWith("List clients")) {
                 listClients(cl);
             }
 
-            if (arr[1].trim().startsWith("to")) {
+            if (arr[1].trim().startsWith("To")) {
                 String[] split1 = arr[1].split(":");
                 String hostname = split1[0].trim().split(" ")[1];
 
@@ -52,18 +60,22 @@ public class PrinterI implements Talker.Printer {
                 broadcast(message, cl);
             }
 
-            if (arr[1].trim().startsWith("fib")) {
+            if (arr[1].trim().startsWith("Fib")) {
                 String num = arr[1].trim().split(":")[1];
                 fibonacciResponse(num, cl);
             }
+
+            Long endTime = System.currentTimeMillis();
+            System.out.println(endTime + " " + "ms");
+            System.out.println("Response time: " + (endTime - startTime) + " ms");
+            Thread thread = Thread.currentThread();
+            System.out.println("Thread " + thread.getId() + " finished");
         }));
     }
 
     private void listClients(CallbackPrx cl) {
-        StringBuilder hosts = new StringBuilder();
-        for (String hostname : registerHosts.keySet()) {
-            hosts.append(hostname);
-        }
+        String hosts = "";
+        hosts = String.join("\n", registerHosts.keySet());
         cl.response(hosts.toString());
     }
 
@@ -89,20 +101,8 @@ public class PrinterI implements Talker.Printer {
         if (s.matches("\\w*[0-9]+\\w*")) {
             int num = Integer.parseInt(s);
 
-            if (fibonacciValues.containsKey(num)) {
-                cl.response(fibonacciValues.get(num).toString());
-            } else {
-                try {
-                    semaphore.acquire();
-                    BigInteger fibonacciN = fibonacciHandler(num);
-                    cl.response(fibonacciValues.get(num).toString());
-                } catch (InterruptedException e) {
-                    throw new RuntimeException(e);
-                }
-                semaphore.release();
-            }
-
-
+            BigInteger fibonacciN = fibonacci.getFibonacci(num);
+            cl.response(fibonacciN.toString());
         } else {
             System.out.println(s);
             cl.response("La cadena ingresada no es un número");
@@ -112,59 +112,32 @@ public class PrinterI implements Talker.Printer {
 
     public void registerHost(String s, CallbackPrx cl, Current current) {
         if (!registerHosts.containsKey(s)) {
-            registerHosts.put(s, cl);
+            try {
+                semaphore.acquire();
+                registerHosts.put(s, cl);
+                semaphore.release();
+                cl.response("El host se ha registrado con exito");
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
         } else {
             cl.response("Ya se encuentra registrado");
         }
-        cl.response("Fue registrado con exito");
     }
 
-
-    private static String fibonacci(int n) {
-        int a = 0, b = 1, c;
-        String fibonacci = "";
-
-        for (int i = 0; i < n; i++) {
-            if (a > 0) {
-                fibonacci += (i != n - 1) ? a + ", " : a;
-            } else {
-                fibonacci += ", Ha llegado al maximo valor posible previo al desbordamiento";
-                i = n;
-            }
-            c = a + b;
-            a = b;
-            b = c;
+    public String logout(String s, Current current) {
+        if (!registerHosts.containsKey(s)) {
+            return "No se encuentra registrado";
         }
-        return fibonacci;
-    }
 
-    private BigInteger fibonacciHandler(int n) {
         try {
-            fibonacciFun(n);
-        } catch (StackOverflowError e) {
-            fibonacciHandler(n - 1000);
-            fibonacciHandler(n);
+            semaphore.acquire();
+            registerHosts.remove(s);
+            semaphore.release();
+            System.out.println("El host "+s+" se ha desconectado con exito");
+        } catch (InterruptedException e) {
+            e.printStackTrace();
         }
-        return fibonacciValues.get(n);
-    }
-
-    private BigInteger fibonacciFun(int n) {
-        if (n == 0) {
-            fibonacciValues.put(n, BigInteger.ZERO);
-
-            return BigInteger.ZERO;
-        }
-        if (n == 1) {
-            fibonacciValues.put(n, BigInteger.ONE);
-            return BigInteger.ONE;
-        }
-
-        if (fibonacciValues.containsKey(n)) {
-            return fibonacciValues.get(n);
-        }
-
-        fibonacciValues.put(n, fibonacciFun(n - 1).add(fibonacciFun(n - 2)));
-
-        return fibonacciValues.get(n);
+        return "Se ha desconectado con exito";
     }
 }

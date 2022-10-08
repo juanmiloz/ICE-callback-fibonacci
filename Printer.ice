@@ -7,5 +7,6 @@ module Talker
     {
         void printString(string s, Callback* cl);
         void registerHost(string s, Callback* cl);
+        string logout(string s);
     }
 }

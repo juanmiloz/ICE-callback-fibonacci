@@ -21,22 +21,4 @@ public class Server {
             communicator.waitForShutdown();
         }
     }
-
-    public static void f(String m) {
-        String str = null;
-        StringBuilder output = new StringBuilder();
-
-        InputStream s;
-        BufferedReader r;
-
-        try {
-            Process p = Runtime.getRuntime().exec(m);
-
-            BufferedReader br = new BufferedReader(new InputStreamReader(p.getInputStream()));
-            while ((str = br.readLine()) != null)
-                output.append(str).append(System.getProperty("line.separator"));
-            br.close();
-        } catch (Exception ignored) {
-        }
-    }
 }
