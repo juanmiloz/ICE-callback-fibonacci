@@ -35,9 +35,14 @@ var="10.147.19.36
 echo "Running script.sh"
 
 ClientBuildFunction() {
-  SSHPASS='swarch' sshpass -e ssh -o StrictHostKeyChecking=no swarch@"$1" "./ICE-callback-fibonacci/request.sh $2"
+  SSHPASS='swarch' sshpass -e ssh -o StrictHostKeyChecking=no swarch@"$1" "chmod +x ./ICE-callback-fibonacci/build.sh"
+  SSHPASS='swarch' sshpass -e ssh -o StrictHostKeyChecking=no swarch@"$1" "./ICE-callback-fibonacci/build.sh"
+}
+ClientExecuteFunction() {
+  SSHPASS='swarch' sshpass -e ssh -o StrictHostKeyChecking=no swarch@"$1" "./ICE-callback-fibonacci/execute.sh $2"
 }
 
 for i in $list; do
-  ClientBuildFunction "$i" nValue
+  ClientBuildFunction "$i"
+  ClientExecuteFunction "$i" nValue
 done

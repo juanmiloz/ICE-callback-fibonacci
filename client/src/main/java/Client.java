@@ -1,4 +1,5 @@
 import Talker.CallbackPrx;
+import Talker.PrinterPrx;
 
 import java.io.*;
 import java.net.InetAddress;
@@ -40,8 +41,10 @@ public class Client {
                     System.out.println("Shutting down...");
                     System.out.println(printer.logout(finalHostname));
                 }));
-
-                menu(printer, hostname, br, callbackPrx);
+                if(args.length == 0) {
+                    menu(printer, hostname, br, callbackPrx);
+                }
+                test(printer,args[0],callbackPrx);
 
                 bw.close();
                 br.close();
@@ -49,6 +52,11 @@ public class Client {
                 System.out.println(io.getMessage());
             }
         }
+    }
+
+    private static void test(PrinterPrx printer, String arg, CallbackPrx callbackPrx, String hostname) {
+        String request = hostname + "<-" + "Fib:",args;
+        printer.printString(request, callbackPrx);
     }
 
     private static void menu(Talker.PrinterPrx printer, String hostname, BufferedReader br, CallbackPrx callbackPrx) throws IOException {
