@@ -5,7 +5,12 @@ TARGET_KEY="Callback.Endpoints"
 CONFIG_FILE="client/src/main/resources/config.client"
 REPLACEMENT_VALUE="default -p 9090 -h $1"
 sed -c -i "s/\($TARGET_KEY *= *\).*/\1$REPLACEMENT_VALUE/" $CONFIG_FILE
+TARGET_KEY="Callback.Endpoints"
+CONFIG_FILE="client/src/main/resources/config.client"
+REPLACEMENT_VALUE="default -p 9090 -h $1"
+sed -c -i "s/\($TARGET_KEY *= *\).*/\1$REPLACEMENT_VALUE/" $CONFIG_FILE
 chmod +x ./gradlew
-./gradlew build
+./gradlew client:build
+./gradlew server:build
 chmod +x ./execute.sh
 chmod +x ./executeS.sh

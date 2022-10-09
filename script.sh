@@ -1,8 +1,8 @@
 #! C:\cygwin64\bin\bash.exe
 
 list="10.147.19.226
-10.147.19.231"
-var="10.147.19.36
+10.147.19.231
+10.147.19.36
 10.147.19.215
 10.147.19.121
 10.147.19.245
@@ -31,8 +31,8 @@ var="10.147.19.36
 10.147.19.236
 10.147.19.212
 "
-
-nvalues="10000 50000 100000 200000 300000"
+serverIP="10.147.19.36"
+nValues="10000 50000 100000 200000 300000"
 
 echo "Running script.sh"
 
@@ -50,14 +50,17 @@ ClientExecuteFunction() {
 ServerExecuteFunction() {
   SSHPASS='swarch' sshpass -e ssh -o StrictHostKeyChecking=no swarch@"$1" "./ICE-callback-fibonacci/executeS.sh"
 }
+GetServerDataFunction() {
+  SSHPASS='swarch' sshpass -e scp -o StrictHostKeyChecking=no swarch@"$1":/home/swarch/ICE-callback-fibonacci/data/output_server.txt ./data/output_server.txt
+}
 
 for i in $list; do
   BuildFunction "$i"
 done
 
-ServerExecuteFunction "10.147.19.36"
+ServerExecuteFunction $serverIP
 
-for j in $nvalues; do
+for j in $nValues; do
   for k in {1..3}; do
     for i in $list; do
       ClientExecuteFunction "$i" "$j" &
@@ -65,3 +68,5 @@ for j in $nvalues; do
     sleep 30s
   done
 done
+
+GetServerDataFunction $serverIP
