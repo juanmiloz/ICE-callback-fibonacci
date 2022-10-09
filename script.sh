@@ -15,7 +15,8 @@ list="10.147.19.226
 10.147.19.201
 10.147.19.3
 10.147.19.113
-10.147.19.92
+"
+var="10.147.19.92
 10.147.19.79
 10.147.19.204
 10.147.19.142
@@ -34,7 +35,8 @@ list="10.147.19.226
 serverIP="10.147.19.36"
 nValues="10000 50000 100000 200000 300000"
 
-echo "Running script.sh"
+echo -e "\e[1;31m Running script.sh "
+echo -e "\e[1;33m Building...\e[0;33m"
 
 TransferFunction() {
   SSHPASS='swarch' sshpass -e scp -o StrictHostKeyChecking=no swarch@"$1"
@@ -61,6 +63,14 @@ done
 ServerExecuteFunction $serverIP
 
 for j in $nValues; do
+echo -e "\e[1;33m Builds complete"
+echo -e "\e[1;34m Executing server... \e[0;34m"
+
+ServerExecuteFunction "10.147.19.36"
+
+echo -e "\e[1;34m Server on \e[0;32m"
+
+for j in $nvalues; do
   for k in {1..3}; do
     for i in $list; do
       ClientExecuteFunction "$i" "$j" &
