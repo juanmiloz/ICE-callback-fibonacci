@@ -4,7 +4,6 @@ import com.zeroc.Ice.Current;
 
 import java.math.BigInteger;
 import java.util.HashMap;
-import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Semaphore;
 import java.util.concurrent.ThreadPoolExecutor;
@@ -34,8 +33,6 @@ public class PrinterI implements Talker.Printer {
             Long startTime = System.currentTimeMillis();
             String[] arr = s.split("<-");
 
-            System.out.println(arr[0].trim());
-
             if (arr[1].trim().startsWith("Register")) {
                 String host = arr[1].split(":")[1];
                 registerHost(host, cl, current);
@@ -64,16 +61,19 @@ public class PrinterI implements Talker.Printer {
             }
 
             Long endTime = System.currentTimeMillis();
-            System.out.println("start time = " +startTime + " " + "ms");
-            System.out.println("end time =" + endTime + " " + "ms");
-            System.out.println("Response time: " + (endTime - startTime) + " ms");
             Thread thread = Thread.currentThread();
-            System.out.println("Thread " + thread.getId() + " finished");
-            System.out.println("thread number" + pool.getActiveCount());
+            String prefix = String.valueOf(thread.getId());
+
+            System.out.println(prefix + "-> Requested by: " + arr[0].trim());
+            System.out.println(prefix + "-> Start time = " + startTime + " " + "ms");
+            System.out.println(prefix + "-> End time =" + endTime + " " + "ms");
+            System.out.println(prefix + "-> Response time: " + (endTime - startTime) + " ms");
+            System.out.println(prefix + "-> Thread number" + pool.getActiveCount());
         }));
     }
 
     private void listClients(CallbackPrx cl) {
+        System.out.println("List clients");
         String hosts = "";
         hosts = String.join("\n", registerHosts.keySet());
         cl.response(hosts.toString());
@@ -90,6 +90,7 @@ public class PrinterI implements Talker.Printer {
     }
 
     private void broadcast(String message, CallbackPrx cl) {
+        System.out.println("Sending broadcast message");
         for (CallbackPrx callback : registerHosts.values()) {
             callback.response(message);
         }
@@ -97,6 +98,7 @@ public class PrinterI implements Talker.Printer {
     }
 
     private void fibonacciResponse(String s, CallbackPrx cl) {
+        System.out.println("Fibonacci of " + s);
 
         if (s.matches("\\w*[0-9]+\\w*")) {
             int num = Integer.parseInt(s);
@@ -111,6 +113,7 @@ public class PrinterI implements Talker.Printer {
 
 
     public void registerHost(String s, CallbackPrx cl, Current current) {
+        System.out.println("Registering host: " + s);
         if (!registerHosts.containsKey(s)) {
             try {
                 semaphore.acquire();
@@ -134,7 +137,7 @@ public class PrinterI implements Talker.Printer {
             semaphore.acquire();
             registerHosts.remove(s);
             semaphore.release();
-            System.out.println("El host "+s+" se ha desconectado con exito");
+            System.out.println("El host " + s + " se ha desconectado con exito");
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

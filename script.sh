@@ -32,17 +32,35 @@ var="10.147.19.36
 10.147.19.212
 "
 
+nvalues="10000 50000 100000 200000 300000"
+
 echo "Running script.sh"
 
-ClientBuildFunction() {
+SendProjectFunction() {
+  SSHPASS='swarch' sshpass -e ssh -o StrictHostKeyChecking=no swarch@"$1" "./ICE-callback-fibonacci/execute.sh $2"
+}
+BuildFunction() {
   SSHPASS='swarch' sshpass -e ssh -o StrictHostKeyChecking=no swarch@"$1" "chmod +x ./ICE-callback-fibonacci/build.sh"
-  SSHPASS='swarch' sshpass -e ssh -o StrictHostKeyChecking=no swarch@"$1" "./ICE-callback-fibonacci/build.sh"
+  SSHPASS='swarch' sshpass -e ssh -o StrictHostKeyChecking=no swarch@"$1" "./ICE-callback-fibonacci/build.sh $1"
 }
 ClientExecuteFunction() {
   SSHPASS='swarch' sshpass -e ssh -o StrictHostKeyChecking=no swarch@"$1" "./ICE-callback-fibonacci/execute.sh $2"
 }
+ServerExecuteFunction() {
+  SSHPASS='swarch' sshpass -e ssh -o StrictHostKeyChecking=no swarch@"$1" "./ICE-callback-fibonacci/executeS.sh"
+}
 
 for i in $list; do
-  ClientBuildFunction "$i"
-  ClientExecuteFunction "$i" nValue
+  BuildFunction "$i"
+done
+
+ServerExecuteFunction "10.147.19.36"
+
+for j in $nvalues; do
+  for k in {1..3}; do
+    for i in $list; do
+      ClientExecuteFunction "$i" "$j" &
+    done
+    sleep 30
+  done
 done

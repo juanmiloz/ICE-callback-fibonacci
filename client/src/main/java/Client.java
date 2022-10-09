@@ -37,15 +37,15 @@ public class Client {
 
                 String finalHostname = hostname;
 
-                Runtime.getRuntime().addShutdownHook(new Thread(() -> {
-                    System.out.println("Shutting down...");
-                    System.out.println(printer.logout(finalHostname));
-                }));
-                if(args.length == 0) {
+                if (args.length == 0) {
+                    Runtime.getRuntime().addShutdownHook(new Thread(() -> {
+                        System.out.println("Shutting down...");
+                        System.out.println(printer.logout(finalHostname));
+                    }));
                     menu(printer, hostname, br, callbackPrx);
                 }
-                test(printer,args[0],callbackPrx);
-
+                test(printer, hostname, args[0], callbackPrx);
+                communicator.shutdown();
                 bw.close();
                 br.close();
             } catch (IOException io) {
@@ -54,9 +54,14 @@ public class Client {
         }
     }
 
-    private static void test(PrinterPrx printer, String arg, CallbackPrx callbackPrx, String hostname) {
-        String request = hostname + "<-" + "Fib:",args;
+    private static void test(PrinterPrx printer, String hostname, String arg, CallbackPrx callbackPrx) {
+        String request = hostname + "<-" + "Fib:"+ arg;
         printer.printString(request, callbackPrx);
+        try {
+            Thread.sleep(10000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     private static void menu(Talker.PrinterPrx printer, String hostname, BufferedReader br, CallbackPrx callbackPrx) throws IOException {
