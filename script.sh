@@ -36,9 +36,10 @@ nvalues="10000 50000 100000 200000 300000"
 
 echo "Running script.sh"
 
-SendProjectFunction() {
-  SSHPASS='swarch' sshpass -e ssh -o StrictHostKeyChecking=no swarch@"$1" "./ICE-callback-fibonacci/execute.sh $2"
+TransferFunction() {
+  SSHPASS='swarch' sshpass -e scp -o StrictHostKeyChecking=no swarch@"$1"
 }
+
 BuildFunction() {
   SSHPASS='swarch' sshpass -e ssh -o StrictHostKeyChecking=no swarch@"$1" "chmod +x ./ICE-callback-fibonacci/build.sh"
   SSHPASS='swarch' sshpass -e ssh -o StrictHostKeyChecking=no swarch@"$1" "./ICE-callback-fibonacci/build.sh $1"
@@ -61,6 +62,6 @@ for j in $nvalues; do
     for i in $list; do
       ClientExecuteFunction "$i" "$j" &
     done
-    sleep 30
+    sleep 30s
   done
 done
