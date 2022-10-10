@@ -1,0 +1,750 @@
+Fibonacci of 10000
+-> Requested by: hgrid4
+-> Start time = 1665359613281 ms
+-> End time =1665359613281 ms
+-> Response time: 0 ms
+Fibonacci of 10000
+-> Requested by: hgrid1
+-> Start time = 1665359613301 ms
+-> End time =1665359613301 ms
+-> Response time: 0 ms
+Fibonacci of 10000
+-> Requested by: hgrid12
+-> Start time = 1665359613344 ms
+-> End time =1665359613344 ms
+-> Response time: 0 ms
+Fibonacci of 10000
+-> Requested by: hgrid7
+-> Start time = 1665359613347 ms
+-> End time =1665359613347 ms
+-> Response time: 0 ms
+Fibonacci of 10000
+-> Requested by: hgrid3
+-> Start time = 1665359613366 ms
+-> End time =1665359613367 ms
+-> Response time: 1 ms
+Fibonacci of 10000
+-> Requested by: hgrid9
+-> Start time = 1665359613379 ms
+-> End time =1665359613380 ms
+-> Response time: 1 ms
+Fibonacci of 10000
+-> Requested by: hgrid6
+-> Start time = 1665359613403 ms
+-> End time =1665359613403 ms
+-> Response time: 0 ms
+Fibonacci of 10000
+-> Requested by: hgrid2
+-> Start time = 1665359613407 ms
+-> End time =1665359613408 ms
+-> Response time: 1 ms
+Fibonacci of 10000
+-> Requested by: hgrid10
+-> Start time = 1665359613436 ms
+-> End time =1665359613436 ms
+-> Response time: 0 ms
+Fibonacci of 10000
+-> Requested by: hgrid5
+-> Start time = 1665359614052 ms
+-> End time =1665359614052 ms
+-> Response time: 0 ms
+Fibonacci of 10000
+-> Requested by: hgrid5
+-> Start time = 1665359643422 ms
+-> End time =1665359643422 ms
+-> Response time: 0 ms
+Fibonacci of 10000
+-> Requested by: hgrid4
+-> Start time = 1665359643480 ms
+-> End time =1665359643480 ms
+-> Response time: 0 ms
+Fibonacci of 10000
+-> Requested by: hgrid2
+-> Start time = 1665359643492 ms
+-> End time =1665359643492 ms
+-> Response time: 0 ms
+Fibonacci of 10000
+-> Requested by: hgrid1
+-> Start time = 1665359643519 ms
+-> End time =1665359643520 ms
+-> Response time: 1 ms
+Fibonacci of 10000
+-> Requested by: hgrid3
+-> Start time = 1665359643535 ms
+-> End time =1665359643535 ms
+-> Response time: 0 ms
+Fibonacci of 10000
+-> Requested by: hgrid7
+-> Start time = 1665359643541 ms
+-> End time =1665359643541 ms
+-> Response time: 0 ms
+Fibonacci of 10000
+-> Requested by: hgrid9
+-> Start time = 1665359643548 ms
+-> End time =1665359643548 ms
+-> Response time: 0 ms
+Fibonacci of 10000
+-> Requested by: hgrid12
+-> Start time = 1665359643569 ms
+-> End time =1665359643570 ms
+-> Response time: 1 ms
+Fibonacci of 10000
+-> Requested by: hgrid6
+-> Start time = 1665359643588 ms
+-> End time =1665359643588 ms
+-> Response time: 0 ms
+Fibonacci of 10000
+-> Requested by: hgrid10
+-> Start time = 1665359643626 ms
+-> End time =1665359643626 ms
+-> Response time: 0 ms
+Fibonacci of 10000
+-> Requested by: hgrid5
+-> Start time = 1665359673621 ms
+-> End time =1665359673622 ms
+-> Response time: 1 ms
+Fibonacci of 10000
+-> Requested by: hgrid4
+-> Start time = 1665359673640 ms
+-> End time =1665359673640 ms
+-> Response time: 0 ms
+Fibonacci of 10000
+-> Requested by: hgrid2
+-> Start time = 1665359673643 ms
+-> End time =1665359673643 ms
+-> Response time: 0 ms
+Fibonacci of 10000
+-> Requested by: hgrid1
+-> Start time = 1665359673657 ms
+-> End time =1665359673657 ms
+-> Response time: 0 ms
+Fibonacci of 10000
+-> Requested by: hgrid7
+-> Start time = 1665359673704 ms
+-> End time =1665359673704 ms
+-> Response time: 0 ms
+Fibonacci of 10000
+-> Requested by: hgrid3
+-> Start time = 1665359673731 ms
+-> End time =1665359673731 ms
+-> Response time: 0 ms
+Fibonacci of 10000
+-> Requested by: hgrid9
+-> Start time = 1665359673734 ms
+-> End time =1665359673734 ms
+-> Response time: 0 ms
+Fibonacci of 10000
+-> Requested by: hgrid6
+-> Start time = 1665359673748 ms
+-> End time =1665359673748 ms
+-> Response time: 0 ms
+Fibonacci of 10000
+-> Requested by: hgrid10
+-> Start time = 1665359673802 ms
+-> End time =1665359673802 ms
+-> Response time: 0 ms
+Fibonacci of 10000
+-> Requested by: hgrid12
+-> Start time = 1665359673813 ms
+-> End time =1665359673813 ms
+-> Response time: 0 ms
+Fibonacci of 50000
+-> Requested by: hgrid5
+-> Start time = 1665359703777 ms
+-> End time =1665359703778 ms
+-> Response time: 1 ms
+Fibonacci of 50000
+-> Requested by: hgrid2
+-> Start time = 1665359703799 ms
+-> End time =1665359703799 ms
+-> Response time: 0 ms
+Fibonacci of 50000
+-> Requested by: hgrid1
+-> Start time = 1665359703801 ms
+-> End time =1665359703801 ms
+-> Response time: 0 ms
+Fibonacci of 50000
+-> Requested by: hgrid4
+-> Start time = 1665359703847 ms
+-> End time =1665359703848 ms
+-> Response time: 1 ms
+Fibonacci of 50000
+-> Requested by: hgrid7
+-> Start time = 1665359703859 ms
+-> End time =1665359703860 ms
+-> Response time: 1 ms
+Fibonacci of 50000
+-> Requested by: hgrid3
+-> Start time = 1665359703873 ms
+-> End time =1665359703874 ms
+-> Response time: 1 ms
+Fibonacci of 50000
+-> Requested by: hgrid6
+-> Start time = 1665359703914 ms
+-> End time =1665359703917 ms
+-> Response time: 3 ms
+Fibonacci of 50000
+-> Requested by: hgrid12
+-> Start time = 1665359703964 ms
+-> End time =1665359703965 ms
+-> Response time: 1 ms
+Fibonacci of 50000
+-> Requested by: hgrid9
+-> Start time = 1665359703980 ms
+-> End time =1665359703983 ms
+-> Response time: 3 ms
+Fibonacci of 50000
+-> Requested by: hgrid10
+-> Start time = 1665359704023 ms
+-> End time =1665359704026 ms
+-> Response time: 3 ms
+Fibonacci of 50000
+-> Requested by: hgrid5
+-> Start time = 1665359733957 ms
+-> End time =1665359733958 ms
+-> Response time: 1 ms
+Fibonacci of 50000
+-> Requested by: hgrid4
+-> Start time = 1665359733980 ms
+-> End time =1665359733980 ms
+-> Response time: 0 ms
+Fibonacci of 50000
+-> Requested by: hgrid1
+-> Start time = 1665359733984 ms
+-> End time =1665359733984 ms
+-> Response time: 0 ms
+Fibonacci of 50000
+-> Requested by: hgrid2
+-> Start time = 1665359733996 ms
+-> End time =1665359733997 ms
+-> Response time: 1 ms
+Fibonacci of 50000
+-> Requested by: hgrid7
+-> Start time = 1665359734040 ms
+-> End time =1665359734041 ms
+-> Response time: 1 ms
+Fibonacci of 50000
+-> Requested by: hgrid3
+-> Start time = 1665359734064 ms
+-> End time =1665359734065 ms
+-> Response time: 1 ms
+Fibonacci of 50000
+-> Requested by: hgrid12
+-> Start time = 1665359734066 ms
+-> End time =1665359734066 ms
+-> Response time: 0 ms
+Fibonacci of 50000
+-> Requested by: hgrid9
+-> Start time = 1665359734072 ms
+-> End time =1665359734073 ms
+-> Response time: 1 ms
+Fibonacci of 50000
+-> Requested by: hgrid6
+-> Start time = 1665359734091 ms
+-> End time =1665359734093 ms
+-> Response time: 2 ms
+Fibonacci of 50000
+-> Requested by: hgrid10
+-> Start time = 1665359734132 ms
+-> End time =1665359734133 ms
+-> Response time: 1 ms
+Fibonacci of 50000
+-> Requested by: hgrid5
+-> Start time = 1665359764133 ms
+-> End time =1665359764134 ms
+-> Response time: 1 ms
+Fibonacci of 50000
+-> Requested by: hgrid2
+-> Start time = 1665359764143 ms
+-> End time =1665359764144 ms
+-> Response time: 1 ms
+Fibonacci of 50000
+-> Requested by: hgrid1
+-> Start time = 1665359764162 ms
+-> End time =1665359764163 ms
+-> Response time: 1 ms
+Fibonacci of 50000
+-> Requested by: hgrid4
+-> Start time = 1665359764177 ms
+-> End time =1665359764178 ms
+-> Response time: 1 ms
+Fibonacci of 50000
+-> Requested by: hgrid12
+-> Start time = 1665359764214 ms
+-> End time =1665359764215 ms
+-> Response time: 1 ms
+Fibonacci of 50000
+-> Requested by: hgrid9
+-> Start time = 1665359764215 ms
+-> End time =1665359764216 ms
+-> Response time: 1 ms
+Fibonacci of 50000
+-> Requested by: hgrid3
+-> Start time = 1665359764221 ms
+-> End time =1665359764222 ms
+-> Response time: 1 ms
+Fibonacci of 50000
+-> Requested by: hgrid7
+-> Start time = 1665359764225 ms
+-> End time =1665359764225 ms
+-> Response time: 0 ms
+Fibonacci of 50000
+-> Requested by: hgrid6
+-> Start time = 1665359764296 ms
+-> End time =1665359764297 ms
+-> Response time: 1 ms
+Fibonacci of 50000
+-> Requested by: hgrid10
+-> Start time = 1665359764310 ms
+-> End time =1665359764311 ms
+-> Response time: 1 ms
+Fibonacci of 100000
+-> Requested by: hgrid5
+-> Start time = 1665359794307 ms
+-> End time =1665359794309 ms
+-> Response time: 2 ms
+Fibonacci of 100000
+-> Requested by: hgrid1
+-> Start time = 1665359794356 ms
+-> End time =1665359794358 ms
+-> Response time: 2 ms
+Fibonacci of 100000
+-> Requested by: hgrid4
+-> Start time = 1665359794365 ms
+-> End time =1665359794367 ms
+-> Response time: 2 ms
+Fibonacci of 100000
+-> Requested by: hgrid12
+-> Start time = 1665359794376 ms
+-> End time =1665359794377 ms
+-> Response time: 1 ms
+Fibonacci of 100000
+-> Requested by: hgrid2
+-> Start time = 1665359794380 ms
+-> End time =1665359794382 ms
+-> Response time: 2 ms
+Fibonacci of 100000
+-> Requested by: hgrid7
+-> Start time = 1665359794391 ms
+-> End time =1665359794393 ms
+-> Response time: 2 ms
+Fibonacci of 100000
+-> Requested by: hgrid3
+-> Start time = 1665359794399 ms
+-> End time =1665359794401 ms
+-> Response time: 2 ms
+Fibonacci of 100000
+-> Requested by: hgrid9
+-> Start time = 1665359794402 ms
+-> End time =1665359794404 ms
+-> Response time: 2 ms
+Fibonacci of 100000
+-> Requested by: hgrid6
+-> Start time = 1665359794426 ms
+-> End time =1665359794431 ms
+-> Response time: 5 ms
+Fibonacci of 100000
+-> Requested by: hgrid10
+-> Start time = 1665359794442 ms
+-> End time =1665359794448 ms
+-> Response time: 6 ms
+Fibonacci of 100000
+-> Requested by: hgrid5
+-> Start time = 1665359824454 ms
+-> End time =1665359824456 ms
+-> Response time: 2 ms
+Fibonacci of 100000
+-> Requested by: hgrid2
+-> Start time = 1665359824462 ms
+-> End time =1665359824464 ms
+-> Response time: 2 ms
+Fibonacci of 100000
+-> Requested by: hgrid4
+-> Start time = 1665359824494 ms
+-> End time =1665359824495 ms
+-> Response time: 1 ms
+Fibonacci of 100000
+-> Requested by: hgrid1
+-> Start time = 1665359824496 ms
+-> End time =1665359824497 ms
+-> Response time: 1 ms
+Fibonacci of 100000
+-> Requested by: hgrid3
+-> Start time = 1665359824517 ms
+-> End time =1665359824519 ms
+-> Response time: 2 ms
+Fibonacci of 100000
+-> Requested by: hgrid7
+-> Start time = 1665359824530 ms
+-> End time =1665359824531 ms
+-> Response time: 1 ms
+Fibonacci of 100000
+-> Requested by: hgrid12
+-> Start time = 1665359824575 ms
+-> End time =1665359824584 ms
+-> Response time: 9 ms
+Fibonacci of 100000
+-> Requested by: hgrid6
+-> Start time = 1665359824597 ms
+-> End time =1665359824599 ms
+-> Response time: 2 ms
+Fibonacci of 100000
+-> Requested by: hgrid10
+-> Start time = 1665359824629 ms
+-> End time =1665359824633 ms
+-> Response time: 4 ms
+Fibonacci of 100000
+-> Requested by: hgrid9
+-> Start time = 1665359824854 ms
+-> End time =1665359824859 ms
+-> Response time: 5 ms
+Fibonacci of 100000
+-> Requested by: hgrid5
+-> Start time = 1665359854650 ms
+-> End time =1665359854652 ms
+-> Response time: 2 ms
+Fibonacci of 100000
+-> Requested by: hgrid1
+-> Start time = 1665359854676 ms
+-> End time =1665359854678 ms
+-> Response time: 2 ms
+Fibonacci of 100000
+-> Requested by: hgrid2
+-> Start time = 1665359854681 ms
+-> End time =1665359854683 ms
+-> Response time: 2 ms
+Fibonacci of 100000
+-> Requested by: hgrid4
+-> Start time = 1665359854713 ms
+-> End time =1665359854715 ms
+-> Response time: 2 ms
+Fibonacci of 100000
+-> Requested by: hgrid7
+-> Start time = 1665359854735 ms
+-> End time =1665359854736 ms
+-> Response time: 1 ms
+Fibonacci of 100000
+-> Requested by: hgrid9
+-> Start time = 1665359854737 ms
+-> End time =1665359854738 ms
+-> Response time: 1 ms
+Fibonacci of 100000
+-> Requested by: hgrid3
+-> Start time = 1665359854740 ms
+-> End time =1665359854742 ms
+-> Response time: 2 ms
+Fibonacci of 100000
+-> Requested by: hgrid12
+-> Start time = 1665359854774 ms
+-> End time =1665359854781 ms
+-> Response time: 7 ms
+Fibonacci of 100000
+-> Requested by: hgrid6
+-> Start time = 1665359854781 ms
+-> End time =1665359854788 ms
+-> Response time: 7 ms
+Fibonacci of 100000
+-> Requested by: hgrid10
+-> Start time = 1665359854799 ms
+-> End time =1665359854800 ms
+-> Response time: 1 ms
+Fibonacci of 200000
+-> Requested by: hgrid5
+-> Start time = 1665359884869 ms
+-> End time =1665359884873 ms
+-> Response time: 4 ms
+Fibonacci of 200000
+-> Requested by: hgrid4
+-> Start time = 1665359884880 ms
+-> End time =1665359884884 ms
+-> Response time: 4 ms
+Fibonacci of 200000
+-> Requested by: hgrid9
+-> Start time = 1665359884890 ms
+-> End time =1665359884895 ms
+-> Response time: 5 ms
+Fibonacci of 200000
+-> Requested by: hgrid12
+-> Start time = 1665359884901 ms
+-> End time =1665359884906 ms
+-> Response time: 5 ms
+Fibonacci of 200000
+-> Requested by: hgrid7
+-> Start time = 1665359884906 ms
+-> End time =1665359884910 ms
+-> Response time: 4 ms
+Fibonacci of 200000
+-> Requested by: hgrid2
+-> Start time = 1665359884911 ms
+-> End time =1665359884915 ms
+-> Response time: 4 ms
+Fibonacci of 200000
+-> Requested by: hgrid1
+-> Start time = 1665359884922 ms
+-> End time =1665359884928 ms
+-> Response time: 6 ms
+Fibonacci of 200000
+-> Requested by: hgrid6
+-> Start time = 1665359884943 ms
+-> End time =1665359884949 ms
+-> Response time: 6 ms
+Fibonacci of 200000
+-> Requested by: hgrid3
+-> Start time = 1665359884950 ms
+-> End time =1665359884954 ms
+-> Response time: 4 ms
+Fibonacci of 200000
+-> Requested by: hgrid10
+-> Start time = 1665359884967 ms
+-> End time =1665359884975 ms
+-> Response time: 8 ms
+Fibonacci of 200000
+-> Requested by: hgrid5
+-> Start time = 1665359914979 ms
+-> End time =1665359914983 ms
+-> Response time: 4 ms
+Fibonacci of 200000
+-> Requested by: hgrid2
+-> Start time = 1665359915010 ms
+-> End time =1665359915014 ms
+-> Response time: 4 ms
+Fibonacci of 200000
+-> Requested by: hgrid1
+-> Start time = 1665359915015 ms
+-> End time =1665359915019 ms
+-> Response time: 4 ms
+Fibonacci of 200000
+-> Requested by: hgrid4
+-> Start time = 1665359915050 ms
+-> End time =1665359915055 ms
+-> Response time: 5 ms
+Fibonacci of 200000
+-> Requested by: hgrid3
+-> Start time = 1665359915066 ms
+-> End time =1665359915070 ms
+-> Response time: 4 ms
+Fibonacci of 200000
+-> Requested by: hgrid9
+-> Start time = 1665359915072 ms
+-> End time =1665359915076 ms
+-> Response time: 4 ms
+Fibonacci of 200000
+-> Requested by: hgrid7
+-> Start time = 1665359915082 ms
+-> End time =1665359915087 ms
+-> Response time: 5 ms
+Fibonacci of 200000
+-> Requested by: hgrid12
+-> Start time = 1665359915105 ms
+-> End time =1665359915116 ms
+-> Response time: 11 ms
+Fibonacci of 200000
+-> Requested by: hgrid6
+-> Start time = 1665359915128 ms
+-> End time =1665359915133 ms
+-> Response time: 5 ms
+Fibonacci of 200000
+-> Requested by: hgrid10
+-> Start time = 1665359915170 ms
+-> End time =1665359915183 ms
+-> Response time: 13 ms
+Fibonacci of 200000
+-> Requested by: hgrid4
+-> Start time = 1665359945413 ms
+-> End time =1665359945418 ms
+-> Response time: 5 ms
+Fibonacci of 200000
+-> Requested by: hgrid5
+-> Start time = 1665359945418 ms
+-> End time =1665359945423 ms
+-> Response time: 5 ms
+Fibonacci of 200000
+-> Requested by: hgrid2
+-> Start time = 1665359945429 ms
+-> End time =1665359945434 ms
+-> Response time: 5 ms
+Fibonacci of 200000
+-> Requested by: hgrid1
+-> Start time = 1665359945445 ms
+-> End time =1665359945449 ms
+-> Response time: 4 ms
+Fibonacci of 200000
+-> Requested by: hgrid7
+-> Start time = 1665359945463 ms
+-> End time =1665359945468 ms
+-> Response time: 5 ms
+Fibonacci of 200000
+-> Requested by: hgrid3
+-> Start time = 1665359945472 ms
+-> End time =1665359945476 ms
+-> Response time: 4 ms
+Fibonacci of 200000
+-> Requested by: hgrid9
+-> Start time = 1665359945487 ms
+-> End time =1665359945491 ms
+-> Response time: 4 ms
+Fibonacci of 200000
+-> Requested by: hgrid6
+-> Start time = 1665359945492 ms
+-> End time =1665359945496 ms
+-> Response time: 4 ms
+Fibonacci of 200000
+-> Requested by: hgrid12
+-> Start time = 1665359945535 ms
+-> End time =1665359945540 ms
+-> Response time: 5 ms
+Fibonacci of 200000
+-> Requested by: hgrid10
+-> Start time = 1665359945564 ms
+-> End time =1665359945570 ms
+-> Response time: 6 ms
+Fibonacci of 300000
+-> Requested by: hgrid1
+-> Start time = 1665359975648 ms
+-> End time =1665359975655 ms
+-> Response time: 7 ms
+Fibonacci of 300000
+-> Requested by: hgrid2
+-> Start time = 1665359975661 ms
+-> End time =1665359975669 ms
+-> Response time: 8 ms
+Fibonacci of 300000
+-> Requested by: hgrid5
+-> Start time = 1665359975669 ms
+-> End time =1665359975677 ms
+-> Response time: 8 ms
+Fibonacci of 300000
+-> Requested by: hgrid4
+-> Start time = 1665359975687 ms
+-> End time =1665359975695 ms
+-> Response time: 8 ms
+Fibonacci of 300000
+-> Requested by: hgrid3
+-> Start time = 1665359975708 ms
+-> End time =1665359975716 ms
+-> Response time: 8 ms
+Fibonacci of 300000
+-> Requested by: hgrid7
+-> Start time = 1665359975776 ms
+-> End time =1665359975797 ms
+-> Response time: 21 ms
+Fibonacci of 300000
+-> Requested by: hgrid9
+-> Start time = 1665359975797 ms
+-> End time =1665359975805 ms
+-> Response time: 8 ms
+Fibonacci of 300000
+-> Requested by: hgrid6
+-> Start time = 1665359975817 ms
+-> End time =1665359975830 ms
+-> Response time: 13 ms
+Fibonacci of 300000
+-> Requested by: hgrid12
+-> Start time = 1665359975831 ms
+-> End time =1665359975838 ms
+-> Response time: 7 ms
+Fibonacci of 300000
+-> Requested by: hgrid10
+-> Start time = 1665359975852 ms
+-> End time =1665359975867 ms
+-> Response time: 15 ms
+Fibonacci of 300000
+-> Requested by: hgrid5
+-> Start time = 1665360005794 ms
+-> End time =1665360005802 ms
+-> Response time: 8 ms
+Fibonacci of 300000
+-> Requested by: hgrid1
+-> Start time = 1665360005822 ms
+-> End time =1665360005829 ms
+-> Response time: 7 ms
+Fibonacci of 300000
+-> Requested by: hgrid2
+-> Start time = 1665360005838 ms
+-> End time =1665360005846 ms
+-> Response time: 8 ms
+Fibonacci of 300000
+-> Requested by: hgrid3
+-> Start time = 1665360005883 ms
+-> End time =1665360005891 ms
+-> Response time: 8 ms
+Fibonacci of 300000
+-> Requested by: hgrid9
+-> Start time = 1665360005897 ms
+-> End time =1665360005904 ms
+-> Response time: 7 ms
+Fibonacci of 300000
+-> Requested by: hgrid7
+-> Start time = 1665360005912 ms
+-> End time =1665360005922 ms
+-> Response time: 10 ms
+Fibonacci of 300000
+-> Requested by: hgrid10
+-> Start time = 1665360005960 ms
+-> End time =1665360005968 ms
+-> Response time: 8 ms
+Fibonacci of 300000
+-> Requested by: hgrid12
+-> Start time = 1665360005999 ms
+-> End time =1665360006023 ms
+-> Response time: 24 ms
+Fibonacci of 300000
+-> Requested by: hgrid4
+-> Start time = 1665360006038 ms
+-> End time =1665360006046 ms
+-> Response time: 8 ms
+Fibonacci of 300000
+-> Requested by: hgrid6
+-> Start time = 1665360006170 ms
+-> End time =1665360006184 ms
+-> Response time: 14 ms
+Fibonacci of 300000
+-> Requested by: hgrid2
+-> Start time = 1665360035984 ms
+-> End time =1665360035992 ms
+-> Response time: 8 ms
+Fibonacci of 300000
+-> Requested by: hgrid1
+-> Start time = 1665360035998 ms
+-> End time =1665360036006 ms
+-> Response time: 8 ms
+Fibonacci of 300000
+-> Requested by: hgrid4
+-> Start time = 1665360036012 ms
+-> End time =1665360036023 ms
+-> Response time: 11 ms
+Fibonacci of 300000
+-> Requested by: hgrid3
+-> Start time = 1665360036023 ms
+-> End time =1665360036031 ms
+-> Response time: 8 ms
+Fibonacci of 300000
+-> Requested by: hgrid12
+-> Start time = 1665360036037 ms
+-> End time =1665360036044 ms
+-> Response time: 7 ms
+Fibonacci of 300000
+-> Requested by: hgrid5
+-> Start time = 1665360036044 ms
+-> End time =1665360036052 ms
+-> Response time: 8 ms
+Fibonacci of 300000
+-> Requested by: hgrid9
+-> Start time = 1665360036059 ms
+-> End time =1665360036067 ms
+-> Response time: 8 ms
+Fibonacci of 300000
+-> Requested by: hgrid7
+-> Start time = 1665360036067 ms
+-> End time =1665360036076 ms
+-> Response time: 9 ms
+Fibonacci of 300000
+-> Requested by: hgrid6
+-> Start time = 1665360036089 ms
+-> End time =1665360036096 ms
+-> Response time: 7 ms
+Fibonacci of 300000
+-> Requested by: hgrid10
+-> Start time = 1665360036138 ms
+-> End time =1665360036162 ms
+-> Response time: 24 ms
