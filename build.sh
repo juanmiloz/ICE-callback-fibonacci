@@ -1,4 +1,4 @@
-#! /bin/bash
+#! /usr/bin/bash
 echo "Running build.sh"
 cd ICE-fibonacci || exit
 chmod +x ./gradlew
