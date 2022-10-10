@@ -25,7 +25,6 @@ public class Client {
             }
 
             try {
-                BufferedWriter bw = new BufferedWriter(new FileWriter("./data/time.txt", true));
                 BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
                 String hostname = "";
 
@@ -46,7 +45,6 @@ public class Client {
                 }
                 test(printer, hostname, args[0], callbackPrx);
                 communicator.shutdown();
-                bw.close();
                 br.close();
             } catch (IOException io) {
                 System.out.println(io.getMessage());
