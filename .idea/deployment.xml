@@ -264,6 +264,58 @@
           </excludedPaths>
         </serverdata>
       </paths>
+      <paths name="hgrid26">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/ICE-fibonacci" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath local="true" path="$PROJECT_DIR$/.idea" />
+            <excludedPath local="true" path="$PROJECT_DIR$/.gitattributes" />
+            <excludedPath local="true" path="$PROJECT_DIR$/.gitignore" />
+            <excludedPath local="true" path="$PROJECT_DIR$/.git" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
+      <paths name="hgrid27">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/ICE-fibonacci" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath local="true" path="$PROJECT_DIR$/.idea" />
+            <excludedPath local="true" path="$PROJECT_DIR$/.gitattributes" />
+            <excludedPath local="true" path="$PROJECT_DIR$/.gitignore" />
+            <excludedPath local="true" path="$PROJECT_DIR$/.git" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
+      <paths name="hgrid28">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/ICE-fibonacci" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath local="true" path="$PROJECT_DIR$/.idea" />
+            <excludedPath local="true" path="$PROJECT_DIR$/.gitattributes" />
+            <excludedPath local="true" path="$PROJECT_DIR$/.gitignore" />
+            <excludedPath local="true" path="$PROJECT_DIR$/.git" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
+      <paths name="hgrid29">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/ICE-fibonacci" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath local="true" path="$PROJECT_DIR$/.idea" />
+            <excludedPath local="true" path="$PROJECT_DIR$/.gitattributes" />
+            <excludedPath local="true" path="$PROJECT_DIR$/.gitignore" />
+            <excludedPath local="true" path="$PROJECT_DIR$/.git" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
       <paths name="hgrid3">
         <serverdata>
           <mappings>
@@ -278,6 +330,19 @@
         </serverdata>
       </paths>
       <paths name="hgrid3 (hgrid2)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/ICE-fibonacci" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath local="true" path="$PROJECT_DIR$/.idea" />
+            <excludedPath local="true" path="$PROJECT_DIR$/.gitattributes" />
+            <excludedPath local="true" path="$PROJECT_DIR$/.gitignore" />
+            <excludedPath local="true" path="$PROJECT_DIR$/.git" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
+      <paths name="hgrid30">
         <serverdata>
           <mappings>
             <mapping deploy="/ICE-fibonacci" local="$PROJECT_DIR$" web="/" />
