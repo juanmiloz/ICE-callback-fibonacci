@@ -6,6 +6,8 @@ public class Fibonacci {
     private static HashMap<Integer, BigInteger> fibonacciValues;
     private final Semaphore semaphore;
 
+    public final int MAX_CAPACITY = 300000;
+
     public Fibonacci(Semaphore semaphore) {
         fibonacciValues = new HashMap<>();
         this.semaphore = semaphore;
@@ -47,10 +49,14 @@ public class Fibonacci {
 
         BigInteger n1 = fibonacciFun(n - 1);
         BigInteger n2 = fibonacciFun(n - 2);
+        BigInteger result = n1.add(n2);
 
-        semaphore.acquire();
-        fibonacciValues.put(n, n1.add(n2));
-        semaphore.release();
-        return fibonacciValues.get(n);
+        if(n<=MAX_CAPACITY){
+            semaphore.acquire();
+            fibonacciValues.put(n, result);
+            semaphore.release();
+        }
+
+        return result;
     }
 }
