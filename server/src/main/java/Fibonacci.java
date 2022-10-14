@@ -4,6 +4,7 @@ import java.util.concurrent.Semaphore;
 
 public class Fibonacci {
     private static HashMap<Integer, BigInteger> fibonacciValues;
+    public final int MAX_FIBONACCI = 300000;
 
     public Fibonacci() {
         fibonacciValues = new HashMap<>();
@@ -39,9 +40,12 @@ public class Fibonacci {
 
         BigInteger n1 = fibonacciFun(n - 1);
         BigInteger n2 = fibonacciFun(n - 2);
+        BigInteger result = n1.add(n2);
 
-        fibonacciValues.put(n, n1.add(n2));
+        if (n<=MAX_FIBONACCI) {
+            fibonacciValues.put(n, result);
+        }
 
-        return fibonacciValues.get(n);
+        return result;
     }
 }
