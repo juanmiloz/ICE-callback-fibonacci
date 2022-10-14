@@ -33,7 +33,7 @@ disconnect="10.147.19.71
 10.147.19.207
 "
 serverIP="10.147.19.36"
-nValues="10000 50000 100000 200000 300000"
+nValues="320000 350000 400000 450000"
 
 TransferFunction() {
   SSHPASS='swarch' sshpass -e scp -o StrictHostKeyChecking=no swarch@"$1"
